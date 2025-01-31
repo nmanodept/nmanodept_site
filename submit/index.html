@@ -14,7 +14,7 @@
 
 
 
-<title>Near, Bear. | nmanodept</title>
+<title>Submit | nmanodept</title>
 
 
 
@@ -104,7 +104,7 @@
                    
           
             
-              <li class="menu-item">
+              <li class="menu-item menu-item-active">
                 <a href="/submit/">Submit</a>
               </li> 
                    
@@ -131,69 +131,68 @@
         <div class="post-title">
             
             
-                Near, Bear.
+                Submit
             
             
         </div>
-        <span class="post-date">
-            2025
-        </span>
-        <br>
-        <div class="tag-list">
-            
-                
-                    <span class="post-tag">
-                        <a href="/tags/tag/">
-                            tag
-                        </a>
-                    </span>    
-                           
-            
-        </div>
-
     </div>
-    <div class="post-img">
-        
-            <img src="/f_img/2.jpg" alt="featured_image">
-              
-    </div>
+    <div class="h-line-primary"></div>
 </div>
     <div class="post-content">
-    <p>If sample was here.</p>
-
+    <h1>作品提交表單</h1>
+   <form method="POST" action="/api/submit">
+      <div class="input">
+        <label for="name">Full Name</label>
+        <input id="name" name="name" type="text" />
+      </div>
+      <div class="input">
+        <label for="email">Email Address</label>
+        <input id="email" name="email" type="email" />
+      </div>
+      <div class="input">
+        <label for="referers">How did you hear about us?</label>
+        <select id="referers" name="referers">
+          <option hidden disabled selected value></option>
+          <option value="Facebook">Facebook</option>
+          <option value="Twitter">Twitter</option>
+          <option value="Google">Google</option>
+          <option value="Bing">Bing</option>
+          <option value="Friends">Friends</option>
+        </select>
+      </div>
+      <div class="checklist">
+        <label>What are your favorite movies?</label>
+        <ul>
+          <li>
+            <input id="m1" type="checkbox" name="movies" value="Space Jam" />
+            <label for="m1">Space Jam</label>
+          </li>
+          <li>
+            <input
+              id="m2"
+              type="checkbox"
+              name="movies"
+              value="Little Rascals"
+            />
+            <label for="m2">Little Rascals</label>
+          </li>
+          <li>
+            <input id="m3" type="checkbox" name="movies" value="Frozen" />
+            <label for="m3">Frozen</label>
+          </li>
+          <li>
+            <input id="m4" type="checkbox" name="movies" value="Home Alone" />
+            <label for="m4">Home Alone</label>
+          </li>
+        </ul>
+      </div>
+      <button type="submit">Submit</button>
+    </form>
 </div> 
 
 <script>
     window.onload = detectors();
 </script>
-    <div class="post-footer">
-    <div class="h-line-primary"></div>
-    <nav class="post-nav">
-        <div class="prev-item">
-           
-        </div>
-        <div class="next-item">
-            
-                <div class="icon arrow-right"></div>
-                <div class="post-link">
-                  <a href="/id/4/">Next</a>  
-                </div>  
-            
-        </div>
-    </nav>
-</div>
-
-    
-      <div class="post-comment">
-
-     
-
-     
-    
-    
-
-</div>
-     
   
 </article>
         </div>
